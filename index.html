@@ -17,9 +17,9 @@
 			if (!response.ok){
 				throw new Error(`HTTP error! status: $(response.status)`);
 			} else {
-//				let blob = response.blob();
-//				console.log(response.ok);
-//				console.log(blob);
+				let blob = response.blob();
+				console.log(response.ok);
+				console.log(blob);
 				return response.blob()
 			}
 		}).catch(function(err){

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple fetch()</title>
+  </head>
+  <body>
+	<script>
+		// Call the fetch() method to fetch the image, and store it in a variable
+		let promise = fetch('https://github.com/mdn/learning-area/blob/main/javascript/asynchronous/promises/coffee.jpg', {mode: "no-cors"});
+		promise.then(function(response){
+			let blob = response.blob();
+			console.log(response.ok);
+			console.log(blob);
+		}).catch(function(err){
+			console.log(err);
+		});
+	</script>
+  </body>
+</html>

@@ -7,7 +7,7 @@
   <body>
 	<script>
 		// Call the fetch() method to fetch the image, and store it in a variable
-		let promise = fetch('https://github.com/mdn/learning-area/blob/main/javascript/asynchronous/promises/coffee.jpg', {mode: "no-cors"});
+		let promise = fetch('coffee.jpg');
 		promise.then(function(response){
 			let blob = response.blob();
 			console.log(response.ok);
